@@ -1,0 +1,4 @@
+{
+  "name": "strapi-provider-upload-vercel-blob",
+  "packageManager": "yarn@4.4.1"
+}
