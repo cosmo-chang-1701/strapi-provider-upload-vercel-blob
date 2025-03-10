@@ -1,4 +1,39 @@
 {
-  "name": "strapi-provider-upload-vercel-blob",
-  "packageManager": "yarn@4.4.1"
+  "name": "@cosmo.chang1701/strapi-provider-upload-vercel-blob",
+  "packageManager": "yarn@4.4.1",
+  "version": "1.0.1",
+  "description": "A Vercel Blob storage provider",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "yarn clean && tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "keywords": [
+    "vercel",
+    "blob",
+    "storage",
+    "provider"
+  ],
+  "author": "Cosmo Chang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cosmo-chang-1701/strapi-provider-upload-vercel-blob.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cosmo-chang-1701/strapi-provider-upload-vercel-blob/issues"
+  },
+  "homepage": "https://github.com/cosmo-chang-1701/strapi-provider-upload-vercel-blob#readme",
+  "dependencies": {
+    "@vercel/blob": "^0.22.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }
